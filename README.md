@@ -15,7 +15,7 @@ The system aligns visual and neural representations through a multimodal encoder
 
 ### 🧠 Framework Overview
 <p align="center">
-  <img src="assets/BraiNav_overall.pdf" alt="BraiNav Framework" width="700">
+  <img src="assets/BraiNav_overall.jpg" alt="BraiNav Framework" width="700">
 </p>
 
 
