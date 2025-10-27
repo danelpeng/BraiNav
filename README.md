@@ -1,4 +1,4 @@
-# 🧠 BraiNav: Incorporating Human Brain Activity to Enhance Robustness in Embodied Visual Navigation
+# 🧠 [BraiNav: Incorporating Human Brain Activity to Enhance Robustness in Embodied Visual Navigation](http://engine.scichina.com/doi/10.1007/s11431-025-3007-6)
 
 Official implementation of the paper:
 
@@ -22,7 +22,7 @@ BraiNav is a **two-phase Brain-Machine Integration Navigation framework** design
 
 ### 3️⃣ Navigation Policy Learning
 - The fused brain-visual embeddings are used to **train a navigation policy**, improving robustness against various visual corruptions.
-- Extensive experiments show that BraiNav outperforms standard navigation agents and other vision-enhanced baselines in terms of **success rate, SPL, and robustness**.
+- Extensive experiments show that BraiNav outperforms standard navigation agents and other vision-enhanced baselines in terms of **SR and SPL**.
 
 ### 🧠 Framework Overview
 <p align="center">
@@ -45,12 +45,34 @@ We recommend following the setup style of [ROBUSTNAV](https://github.com/allenai
 ## 🚀 2. Training and Evaluation
 
 🔧 Training
+```
 bash train_navigation_agents.sh
+```
 
 🧪 Evaluation
+```
 bash eval_navigation_agents.sh
+```
 
 ## 📚 3. Citation
 
+If you find our work useful in your research, please consider citing:
+
+```bibtex
+@article{peng2025brainav,
+  title   = {BraiNav: Incorporating Human Brain Activity to Enhance Robustness in Embodied Visual Navigation},
+  author  = {Jie PENG, Changde DU, Kaicheng FU, Huiguang HE},
+  journal = {Science China Technological Sciences},
+  year    = {2025}
+}
+```
 
 ## 🙏 Acknowledgements
+
+We sincerely thank the following open-source projects and research works that inspired and supported our development of **BraiNav**:
+
+- [**ROBUSTNAV**](https://github.com/allenai/robustnav):  
+  We build upon the navigation framework provided by ROBUSTNAV for training and evaluating embodied agents under visual corruptions.
+
+- [**Predicting brain activity using Transformers**](https://github.com/Hosseinadeli/algonauts2023_transformers):  
+  This work inspired the design of our brain encoder and neural representation modeling strategy for integrating human brain activity into embodied AI.
