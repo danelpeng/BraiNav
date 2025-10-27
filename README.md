@@ -4,23 +4,35 @@ Official implementation of the paper:
 
 > **BraiNav: Incorporating Human Brain Activity to Enhance Robustness in Embodied Visual Navigation**  
 > *Science China Technological Sciences, 2025*  
-> [Daniel Pang](https://github.com/danelpeng) et al.
+> [Daniel Peng](https://github.com/danelpeng) et al.
 
 ---
 
 ## 🧩 0. Method Overview
 
-BraiNav introduces a **brain-informed embodied navigation framework**, integrating human EEG signals into the navigation policy to improve **robustness under visual perturbations**.  
-The system aligns visual and neural representations through a multimodal encoder and trains a navigation policy that generalizes to unseen scenes and degraded visual inputs.
+BraiNav is a **two-phase Brain-Machine Integration Navigation framework** designed to enhance robustness of embodied navigation agents against visual corruptions by leveraging **human brain activity**.
+
+### 1️⃣ Brain Encoder Pretraining
+- A **brain encoder** is first trained on a large-scale human brain activity dataset using a **self-supervised pretrained model**.
+- After pretraining, the brain encoder is **frozen** to extract high-level neural representations for downstream navigation tasks.
+
+### 2️⃣ Multimodal Brain-Visual Fusion
+- Neural representations from the frozen brain encoder capture **high-level cognitive information**.  
+- A **cross-attention based multimodal fusion module** combines visual features from the navigation environment with brain-derived representations to form a **joint brain-visual embedding**.
+
+### 3️⃣ Navigation Policy Learning
+- The fused brain-visual embeddings are used to **train a navigation policy**, improving robustness against various visual corruptions.
+- Extensive experiments show that BraiNav outperforms standard navigation agents and other vision-enhanced baselines in terms of **success rate, SPL, and robustness**.
 
 ### 🧠 Framework Overview
 <p align="center">
   <img src="assets/BraiNav_overall.jpg" alt="BraiNav Framework" width="700">
 </p>
 
-
 ### 📈 Main Results
-
+<p align="center">
+  <img src="assets/results.png" alt="BraiNav Framework" width="700">
+</p>
 
 > 📊 BraiNav consistently improves navigation robustness under visual degradation scenarios.
 
