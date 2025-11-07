@@ -60,10 +60,14 @@ If you find our work useful in your research, please consider citing:
 
 ```bibtex
 @article{peng2025brainav,
-  title   = {BraiNav: Incorporating Human Brain Activity to Enhance Robustness in Embodied Visual Navigation},
-  author  = {Jie PENG, Changde DU, Kaicheng FU, Huiguang HE},
-  journal = {Science China Technological Sciences},
-  year    = {2025}
+  title={BraiNav: Incorporating human brain activity to enhance robustness in embodied visual navigation},
+  author={Peng, Jie and Du, Changde and Fu, Kaicheng and He, Huiguang},
+  journal={Science China Technological Sciences},
+  volume={68},
+  number={11},
+  pages={2120405},
+  year={2025},
+  publisher={Springer}
 }
 ```
 
